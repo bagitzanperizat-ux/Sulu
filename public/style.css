@@ -283,3 +283,57 @@ footer {
 .social-links a:hover {
   color: #999;
 }
+
+
+.about {
+  max-width: 700px;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.contact {
+  max-width: 500px;
+}
+
+.contact h1 {
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 14px 28px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
