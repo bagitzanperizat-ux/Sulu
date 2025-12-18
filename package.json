@@ -1,0 +1,25 @@
+{
+  "name": "project_web",
+  "version": "1.0.0",
+  "description": "This project is a simple e-commerce web application landing page.\r It is designed for browsing products and preparing for future online purchasing functionality.\r The application is built using Node.js and Express.js and serves a static landing page through an Express server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagitzanperizat-ux/Project_WEB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bagitzanperizat-ux/Project_WEB/issues"
+  },
+  "homepage": "https://github.com/bagitzanperizat-ux/Project_WEB#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
