@@ -16,6 +16,34 @@ The topic of this project is an e-commerce web application.
 The goal of the project is to create a modern and user-friendly online shop where users can browse products, view collections, and manage a shopping cart.
 This project was chosen because it is practical and aligns well with the topics of the Web Technologies 2 course, such as backend development, APIs, databases, and authentication.
 
+## Application Routes
+
+The Express server handles the following routes:
+
+- **GET /** – Home page with project introduction and navigation
+- **GET /about** – About page with information about the project and team
+- **GET /contact** – Contact page containing a message form
+- **POST /contact** – Handles contact form submission and processes user input
+- **All other routes** – Display a custom 404 Page Not Found
+
+## Contact Form
+
+The Contact page includes a form that allows users to send a message to the server.
+
+### Form Fields:
+- Name (text input)
+- Email (email input)
+- Message (textarea)
+- Submit button
+
+### Form Handling:
+- The form sends data using a **POST** request to `/contact`
+- Form data is processed on the server using Express middleware
+- Submitted data is available through `req.body`
+- The server logs the submitted data and sends a confirmation message back to the user
+
+No database is used in this project.
+
 ## Planned Features
 - Browse available products
 - View product collections (Best sellers, Tops, Bottoms, Pyjamas)
@@ -28,21 +56,25 @@ This project was chosen because it is practical and aligns well with the topics 
 <pre>
 project-root/
 ├── public/
-│   └── style.css
+│   ├── style.css
+│   └── images/
 │
 ├── views/
-│   └── index.html
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   └── 404.html
 │
 ├── server.js
+├── package.json
 └── README.md
 </pre>
 
-
-
-
 ## Installation & Run Instructions
+
 1. Install project dependencies:
 npm install
+
 
 
 2. Start the Express server:
@@ -52,6 +84,10 @@ npm install
 3. Open the application in your browser:
 http://localhost:3000
 
+4. Test available routes:
+http://localhost:3000/
+http://localhost:3000/about
+http://localhost:3000/contact
 
 ## Roadmap (10 Weeks)
 
